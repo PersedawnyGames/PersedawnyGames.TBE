@@ -1,0 +1,9 @@
+﻿# License
+
+This package is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+## Terms:
+- You are free to **use**, **share**, and **adapt** the material for **commercial** purposes, under the condition that you provide **appropriate credit** to the author(s).
+- You must indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the author(s) endorse you or your use of the work.
+
+For the full license text, please refer to the official page: [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
