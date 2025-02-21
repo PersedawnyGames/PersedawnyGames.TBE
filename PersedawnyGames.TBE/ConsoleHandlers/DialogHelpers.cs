@@ -1,4 +1,4 @@
-﻿namespace PersedawnyGames.TBE.Console;
+﻿namespace PersedawnyGames.TBE.ConsoleHandlers;
 
 internal class DialogHelpers
 {

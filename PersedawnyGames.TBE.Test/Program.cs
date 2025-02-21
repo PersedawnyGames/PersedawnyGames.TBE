@@ -1,14 +1,12 @@
-﻿using PersedawnyGames.TBE.Console;
+﻿using PersedawnyGames.TBE.Test.Scenes;
 
 namespace PersedawnyGames.TBE.Test;
 
-internal class Program
+internal class Program : Game
 {
     static void Main(string[] args)
     {
-
-        InputHandler.ClearInputBuffer();
-
-        GameInitializer.Initialize();
+        WindowInitializer.Initialize();
+        Initialize("TBE.Test", new StartScreen());
     }
 }

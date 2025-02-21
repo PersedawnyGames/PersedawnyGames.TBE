@@ -2,7 +2,7 @@
 
 namespace PersedawnyGames.TBE;
 
-public class GameInitializer
+public class WindowInitializer
 {
     // P/Invoke declarations
     [DllImport("user32.dll", SetLastError = true)]

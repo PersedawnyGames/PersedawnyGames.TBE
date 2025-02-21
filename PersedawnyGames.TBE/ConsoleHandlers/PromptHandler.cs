@@ -1,9 +1,15 @@
 ﻿using Spectre.Console;
 
-namespace PersedawnyGames.TBE.Console;
+namespace PersedawnyGames.TBE.ConsoleHandlers;
 
 public class PromptHandler
 {
+    public static string PromptQuestion(string question)
+    {
+        InputHandler.ClearInputBuffer();
+        return AnsiConsole.Ask<string>(question);
+    }
+
     public static string PromptQuestion(string question, string defaultValue)
     {
         InputHandler.ClearInputBuffer();
@@ -22,16 +28,14 @@ public class PromptHandler
         return choice;
     }
 
-    public static PromptOption PromptSelection(IEnumerable<PromptOption> options, string? title)
+    public static PromptOption PromptSelection(IEnumerable<PromptOption> options, string title)
     {
         InputHandler.ClearInputBuffer();
 
         var prompt = new SelectionPrompt<string>()
                 .PageSize(CheckOptionsAmount(options.Count()))
+                .Title(title)
                 .AddChoices(options.Select(x => x.Action));
-
-        if (string.IsNullOrEmpty(title))
-            prompt.Title = title;
 
         var choice = AnsiConsole.Prompt(prompt);
         var chosenOption = options.First(x => x.Action == choice);

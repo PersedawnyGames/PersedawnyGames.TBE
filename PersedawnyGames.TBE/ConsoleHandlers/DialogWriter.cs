@@ -1,6 +1,6 @@
 using Spectre.Console;
 
-namespace PersedawnyGames.TBE.Console;
+namespace PersedawnyGames.TBE.ConsoleHandlers;
 
 public class DialogWriter
 {
